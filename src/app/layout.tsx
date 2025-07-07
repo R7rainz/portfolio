@@ -52,6 +52,9 @@ export const metadata: Metadata = {
   title: "Ronak Kamboj",
   description:
     "Computer Science Student | Linux Enthusiast | Developer | Arch Linux User",
+  icons: {
+    icon: "/rainz(1).jpg",
+  },
 };
 
 export default function RootLayout({
