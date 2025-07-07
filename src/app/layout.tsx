@@ -49,7 +49,7 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Ronak Kamboj - Developer",
+  title: "Ronak Kamboj",
   description:
     "Computer Science Student | Linux Enthusiast | Developer | Arch Linux User",
 };
