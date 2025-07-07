@@ -72,7 +72,7 @@ export function ContributionGraph({
   const weeks: ContributionDay[][] = [];
   let currentWeek: ContributionDay[] = [];
 
-  contributions.forEach((day, index) => {
+  contributions.forEach((day) => {
     const date = new Date(day.date);
     const dayOfWeek = date.getDay();
 

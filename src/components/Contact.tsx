@@ -131,7 +131,7 @@ export default function ContactSection() {
             transition={{ delay: 0.8, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Let's collaborate on something amazing. Whether it's a project,
+            Let&apos;s collaborate on something amazing. Whether it&apos;s a project,
             opportunity, or just a chat about tech!
           </motion.p>
         </motion.div>
@@ -427,7 +427,7 @@ export default function ContactSection() {
                           ? new Date(user.created_at).getFullYear()
                           : "2024"}
                       </div>
-                      <div>Status: "Currently seeking new opportunities"</div>
+                      <div>Status: &quot;Currently seeking new opportunities&quot;</div>
                       <div className="text-green-400">
                         ● Ready for collaboration and new projects
                       </div>
@@ -450,11 +450,11 @@ export default function ContactSection() {
           <div className="flex justify-center mb-4">
             <div className="flex items-center space-x-2 text-muted-foreground font-fira-code text-sm">
               <span className="text-red-600">❯</span>
-              <span>echo "Thanks for visiting!"</span>
+              <span>echo &quot;Thanks for visiting!&quot;</span>
             </div>
           </div>
           <p className="font-jetbrains text-muted-foreground">
-            Looking forward to hearing from you. Let's build something amazing
+            Looking forward to hearing from you. Let&apos;s build something amazing
             together! 🚀
           </p>
         </motion.div>

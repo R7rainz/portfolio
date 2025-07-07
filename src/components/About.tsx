@@ -64,12 +64,12 @@ export default function About() {
                 <span>Personal Introduction</span>
               </div>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
-                Hey there! I'm{" "}
+                Hey there! I&apos;m{" "}
                 <span className="text-red-400 font-semibold">Ronak Kamboj</span>
-                , a Computer Science student at VIT Bhopal who's obsessed with
+                , a Computer Science student at VIT Bhopal who&apos;s obsessed with
                 the intersection of clean code and elegant systems. While most
                 people see a terminal as intimidating, I see it as home -
-                there's something deeply satisfying about crafting solutions
+                there&apos;s something deeply satisfying about crafting solutions
                 that are both powerful and beautifully minimal.
               </p>
             </div>
@@ -81,15 +81,15 @@ export default function About() {
                 <span>My Journey</span>
               </div>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
-                My path into technology began with a simple question: "How does
-                this actually work?" That curiosity led me deep into the world
-                of Linux systems, starting with Linux Mint where I discovered
-                the philosophy of building exactly what you need—nothing more,
-                nothing less. What started as distro-hopping eventually brought
-                me to Ubuntu with i3, but I craved complete control over my
-                environment. This drive for customization led me to Arch Linux
-                paired with Hyprland, where I dove into the art of ricing to
-                create a minimal setup that truly felt like mine.
+                My path into technology began with a simple question: &quot;How
+                does this actually work?&quot; That curiosity led me deep into
+                the world of Linux systems, starting with Linux Mint where I
+                discovered the philosophy of building exactly what you
+                need—nothing more, nothing less. What started as distro-hopping
+                eventually brought me to Ubuntu with i3, but I craved complete
+                control over my environment. This drive for customization led me
+                to Arch Linux paired with Hyprland, where I dove into the art of
+                ricing to create a minimal setup that truly felt like mine.
               </p>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
                 My programming journey started with Python—the language that
@@ -99,18 +99,18 @@ export default function About() {
                 project in C, which taught me the fundamentals of procedural
                 programming. Eventually, I transitioned to C++ and dipped my
                 toes into competitive programming on Codeforces. My rating sits
-                at 943—not impressive by any means, but it's been a great
+                at 943—not impressive by any means, but it&apos;s been a great
                 learning experience tackling algorithmic challenges.
               </p>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
                 The same minimalist philosophy that drew me to tiling window
                 managers now shapes my approach to development. Every line of
                 code should serve a purpose, every component should earn its
-                place. And yes, I'll be honest—when it comes to frontend
+                place. And yes, I&apos;ll be honest—when it comes to frontend
                 development, I rely heavily on AI tools to help bring my ideas
-                to life. There's no shame in leveraging the right tools for the
-                job, especially when they help you focus on solving the actual
-                problems rather than wrestling with CSS quirks.
+                to life. There&apos;s no shame in leveraging the right tools for
+                the job, especially when they help you focus on solving the
+                actual problems rather than wrestling with CSS quirks.
               </p>
             </div>
 
@@ -121,13 +121,14 @@ export default function About() {
                 <span>What Drives Me</span>
               </div>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
-                I'm driven by the challenge of building solutions that are not
-                just functional, but elegant. Whether it's optimizing a database
-                query, crafting a responsive UI, or configuring a development
-                environment, I believe in doing things the right way - even if
-                it takes longer initially. The satisfaction of a perfectly tuned
-                system, whether it's a Hyprland rice or a production
-                application, is what keeps me coding late into the night.
+                I&apos;m driven by the challenge of building solutions that are
+                not just functional, but elegant. Whether it&apos;s optimizing a
+                database query, crafting a responsive UI, or configuring a
+                development environment, I believe in doing things the right way
+                - even if it takes longer initially. The satisfaction of a
+                perfectly tuned system, whether it&apos;s a Hyprland rice or a
+                production application, is what keeps me coding late into the
+                night.
               </p>
             </div>
 
@@ -138,13 +139,13 @@ export default function About() {
                 <span>Current Focus</span>
               </div>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
-                Currently, I'm diving deep into modern web technologies - React,
-                Next.js, and the entire JavaScript ecosystem. I'm also exploring
-                DevOps practices, because understanding how to deploy and
-                maintain applications is just as important as building them.
-                When I'm not coding, you'll find me tweaking my Neovim config,
-                exploring new mechanical keyboard switches, or catching up on
-                the latest Premier League matches.
+                Currently, I&apos;m diving deep into modern web technologies -
+                React, Next.js, and the entire JavaScript ecosystem. I&apos;m
+                also exploring DevOps practices, because understanding how to
+                deploy and maintain applications is just as important as
+                building them. When I&apos;m not coding, you&apos;ll find me
+                tweaking my Neovim config, exploring new mechanical keyboard
+                switches, or catching up on the latest Premier League matches.
               </p>
             </div>
 
@@ -161,11 +162,11 @@ export default function About() {
                 <span>./connect --with ronak</span>
               </div>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground mb-6">
-                I'm always excited to connect with fellow developers, especially
-                those who appreciate the art of clean code and minimal systems.
-                Whether you want to discuss the latest web technologies, share
-                Linux rice screenshots, or explore potential collaboration
-                opportunities, I'd love to hear from you!
+                I&apos;m always excited to connect with fellow developers,
+                especially those who appreciate the art of clean code and
+                minimal systems. Whether you want to discuss the latest web
+                technologies, share Linux rice screenshots, or explore potential
+                collaboration opportunities, I&apos;d love to hear from you!
               </p>
             </motion.div>
           </motion.div>
