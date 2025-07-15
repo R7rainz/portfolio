@@ -244,7 +244,7 @@ export function MonkeytypeStats() {
               {profile.profileDetails?.bio && (
                 <div className="pt-2 border-t border-border">
                   <p className="font-jetbrains text-xs text-muted-foreground italic">
-                    "{profile.profileDetails.bio}"
+                    &quot;{profile.profileDetails.bio}&quot;
                   </p>
                 </div>
               )}

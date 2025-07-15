@@ -94,7 +94,7 @@ export function useMonkeytypeStats(): MonkeytypeStats {
           "Content-Type": "application/json",
         };
 
-        // Initialize data containers
+        // Initialize /data containers
         let profileData: any = {
           name: "RAINZ7",
           banned: false,
@@ -248,6 +248,8 @@ export function useMonkeytypeStats(): MonkeytypeStats {
           completedTests: profileData.completedTests || 0,
           startedTests: profileData.startedTests || 0,
           timeTyping: profileData.timeTyping || 0,
+          xp: 0,
+          level: 0,
         };
 
         console.log("Final profile:", finalProfile);
