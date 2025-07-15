@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import React from "react";
 
 import {
   Github,
@@ -16,12 +17,13 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ContributionGraph } from "./ui/contriubution-graph";
+import { ContributionGraph } from "../components/ui/contriubution-graph";
 import Link from "next/link";
 import { useGitHubStats } from "../hooks/useGithubStats";
 import Image from "next/image";
+import { MonkeytypeStats } from "@/components/ui/monkeytype-stats";
 
-export default function ContactSection() {
+export default function Contact() {
   const { user, repos, contributions, totalStars, totalForks, loading, error } =
     useGitHubStats("R7rainz");
 
@@ -131,7 +133,7 @@ export default function ContactSection() {
             transition={{ delay: 0.8, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Let&apos;s collaborate on something amazing. Whether it&apos;s a project,
+            Let's collaborate on something amazing. Whether it's a project,
             opportunity, or just a chat about tech!
           </motion.p>
         </motion.div>
@@ -400,6 +402,16 @@ export default function ContactSection() {
               </Card>
             </div>
 
+            {/* Monkeytype Stats */}
+            <div className="space-y-6">
+              <div className="flex items-center space-x-2 text-muted-foreground font-fira-code text-sm">
+                <span className="text-orange-400">❯</span>
+                <span>curl -s api.monkeytype.com/users/personalBests</span>
+              </div>
+
+              <MonkeytypeStats />
+            </div>
+
             {/* Current Status */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2 text-muted-foreground font-fira-code text-sm">
@@ -427,7 +439,7 @@ export default function ContactSection() {
                           ? new Date(user.created_at).getFullYear()
                           : "2024"}
                       </div>
-                      <div>Status: &quot;Currently seeking new opportunities&quot;</div>
+                      <div>Status: "Currently seeking new opportunities"</div>
                       <div className="text-green-400">
                         ● Ready for collaboration and new projects
                       </div>
@@ -450,11 +462,11 @@ export default function ContactSection() {
           <div className="flex justify-center mb-4">
             <div className="flex items-center space-x-2 text-muted-foreground font-fira-code text-sm">
               <span className="text-red-600">❯</span>
-              <span>echo &quot;Thanks for visiting!&quot;</span>
+              <span>echo "Thanks for visiting!"</span>
             </div>
           </div>
           <p className="font-jetbrains text-muted-foreground">
-            Looking forward to hearing from you. Let&apos;s build something amazing
+            Looking forward to hearing from you. Let's build something amazing
             together! 🚀
           </p>
         </motion.div>
