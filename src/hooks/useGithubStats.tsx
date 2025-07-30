@@ -67,104 +67,25 @@ export function useGitHubStats(username: string): GitHubStats {
       try {
         setStats((prev) => ({ ...prev, loading: true, error: null }));
 
-        // Add authentication headers if token is available
-        const headers: HeadersInit = {
-          Accept: "application/vnd.github.v3+json",
-          "User-Agent": "Portfolio-Website",
-        };
+        // Use your API route instead of direct GitHub API calls
+        const response = await fetch(`/api/github/${username}`);
 
-        // Add authorization header if token exists
-        const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
-        if (token) {
-          headers["Authorization"] = `Bearer ${token}`;
+        if (!response.ok) {
+          const errorData = await response.json().catch(() => ({}));
+          throw new Error(errorData.error || `HTTP ${response.status}`);
         }
 
-        // Fetch user profile
-        console.log(`Fetching user data for: ${username}`);
-        const userResponse = await fetch(
-          `https://api.github.com/users/${username}`,
-          { headers }
-        );
-
-        if (!userResponse.ok) {
-          if (userResponse.status === 403) {
-            throw new Error(
-              "Rate limit exceeded. Please try again in an hour or add a GitHub token."
-            );
-          }
-          const errorData = await userResponse.json().catch(() => ({}));
-          throw new Error(
-            `Failed to fetch user data: ${userResponse.status} ${
-              errorData.message || userResponse.statusText
-            }`
-          );
-        }
-
-        const userData: GitHubUser = await userResponse.json();
-        console.log("User data fetched successfully:", userData.login);
-
-        // Fetch repositories with smaller batch size to avoid rate limits
-        console.log("Fetching repositories...");
-        const reposResponse = await fetch(
-          `https://api.github.com/users/${username}/repos?sort=updated&per_page=30&type=owner`,
-          { headers }
-        );
-
-        if (!reposResponse.ok) {
-          if (reposResponse.status === 403) {
-            throw new Error("Rate limit exceeded while fetching repositories.");
-          }
-          const errorData = await reposResponse.json().catch(() => ({}));
-          throw new Error(
-            `Failed to fetch repositories: ${reposResponse.status} ${
-              errorData.message || reposResponse.statusText
-            }`
-          );
-        }
-
-        const reposData: GitHubRepo[] = await reposResponse.json();
-        console.log(`Fetched ${reposData.length} repositories`);
-
-        // Filter out forks and calculate total stars and forks
-        const originalRepos = reposData.filter((repo) => !repo.fork);
-        const totalStars = originalRepos.reduce(
-          (sum, repo) => sum + repo.stargazers_count,
-          0
-        );
-        const totalForks = originalRepos.reduce(
-          (sum, repo) => sum + repo.forks_count,
-          0
-        );
-
-        // Skip README fetch if no token to save API calls
-        // let readmeContent = null;
-        // if (token) {
-        //   try {
-        //     console.log('Fetching profile README...');
-        //     const readmeResponse = await fetch(
-        //       `https://api.github.com/repos/${username}/${username}/readme`,
-        //       { headers }
-        //     );
-
-        //     if (readmeResponse.ok) {
-        //       const readmeData: GitHubReadme = await readmeResponse.json();
-        //       readmeContent = atob(readmeData.content.replace(/\s/g, ""));
-        //       console.log('Profile README fetched successfully');
-        //     }
-        //   } catch (error) {
-        //     console.log('No profile README found:', error);
-        //   }
-        // }
+        const data = await response.json();
 
         // Generate mock contribution data
         const contributions = generateMockContributions();
 
         setStats({
-          user: userData,
-          repos: reposData,
+          user: data.user,
+          repos: data.repos,
           contributions,
-          totalStars,
-          totalForks,
+          totalStars: data.totalStars,
+          totalForks: data.totalForks,
           loading: false,
           error: null,
         });
