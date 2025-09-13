@@ -42,12 +42,12 @@ const projects = [
     image: "/placeholder.svg?height=300&width=500",
     tech: ["Next.js", "TypeScript", "Supabase", "Spotify API", "Tailwind CSS"],
     features: [
-      "Music discovery through personalized recommendations",
-      "Social playlist sharing and collaboration",
-      "User profiles with music taste analytics",
-      "Real-time social features and music chat",
-      "Integration with major music streaming services",
-      "Advanced search and filtering for songs and artists",
+      "Create music rooms with shareable codes and links",
+      "YouTube-powered song search and queue management",
+      "Voting system to reorder songs in the queue (upvote/downvote)",
+      "Default playback on room owner's device",
+      "Optional sync feature for users to listen on their own devices",
+      "Real-time queue updates for all room participants",
     ],
     liveUrl: "https://tunesyncz.vercel.app",
     githubUrl: "https://github.com/R7rainz/tunesyncz",
@@ -431,7 +431,7 @@ export default function Project() {
                     <span>Key Features</span>
                   </h4>
                   <ul className="space-y-2">
-                    {project.features.slice(0, 3).map((feature, idx) => (
+                    {project.features.slice(0, 5).map((feature, idx) => (
                       <li
                         key={idx}
                         className="flex items-start space-x-2 font-jetbrains text-sm text-muted-foreground"
