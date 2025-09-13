@@ -34,6 +34,27 @@ const projects = [
     category: "Full Stack",
   },
   {
+    id: "tunesyncz",
+    name: "TuneSynz",
+    description:
+      "A social music discovery platform that helps users find new music, share playlists, and connect with others through their musical tastes and preferences.",
+    type: "web",
+    image: "/placeholder.svg?height=300&width=500",
+    tech: ["Next.js", "TypeScript", "Supabase", "Spotify API", "Tailwind CSS"],
+    features: [
+      "Music discovery through personalized recommendations",
+      "Social playlist sharing and collaboration",
+      "User profiles with music taste analytics",
+      "Real-time social features and music chat",
+      "Integration with major music streaming services",
+      "Advanced search and filtering for songs and artists",
+    ],
+    liveUrl: "https://tunesyncz.vercel.app",
+    githubUrl: "https://github.com/R7rainz/tunesyncz",
+    status: "Live",
+    category: "Full Stack",
+  },
+  {
     id: "brainbox",
     name: "BrainBox",
     description:
