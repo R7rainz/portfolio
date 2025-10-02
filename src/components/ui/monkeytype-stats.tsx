@@ -260,7 +260,7 @@ export function MonkeytypeStats() {
                 <motion.div
                   className="text-center p-3 border border-border rounded-lg"
                   whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.2 }}
+                  transition={{ duration: 0.1 }}
                 >
                   <div className="font-fira-code text-lg font-bold text-green-400">
                     {profile.completedTests}
@@ -272,7 +272,7 @@ export function MonkeytypeStats() {
                 <motion.div
                   className="text-center p-3 border border-border rounded-lg"
                   whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.2 }}
+                  transition={{ duration: 0.1 }}
                 >
                   <div className="font-fira-code text-lg font-bold text-blue-400">
                     {formatTime(profile.timeTyping)}
@@ -303,7 +303,7 @@ export function MonkeytypeStats() {
                           }`}
                           initial={{ opacity: 0, x: -10 }}
                           animate={{ opacity: pb ? 1 : 0.5, x: 0 }}
-                          transition={{ duration: 0.3 }}
+                          transition={{ duration: 0.2 }}
                           whileHover={pb ? { scale: 1.02 } : {}}
                         >
                           <div className="flex items-center space-x-3">
@@ -362,7 +362,7 @@ export function MonkeytypeStats() {
                           }`}
                           initial={{ opacity: 0, x: -10 }}
                           animate={{ opacity: pb ? 1 : 0.5, x: 0 }}
-                          transition={{ duration: 0.3, delay: 0.1 }}
+                          transition={{ duration: 0.2, delay: 0.1 }}
                           whileHover={pb ? { scale: 1.02 } : {}}
                         >
                           <div className="flex items-center space-x-3">
@@ -421,7 +421,7 @@ export function MonkeytypeStats() {
                             className="flex items-center justify-between p-2 border border-border rounded"
                             initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.3, delay: 0.2 }}
+                            transition={{ duration: 0.2, delay: 0.2 }}
                             whileHover={{ scale: 1.02 }}
                           >
                             <div className="flex items-center space-x-3">
@@ -465,7 +465,7 @@ export function MonkeytypeStats() {
                 <motion.div
                   className="p-3 bg-red-600/10 border border-red-600/20 rounded-lg text-center"
                   whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.2 }}
+                  transition={{ duration: 0.1 }}
                 >
                   <div className="flex items-center justify-center space-x-2 mb-1">
                     <TrendingUp className="h-4 w-4 text-red-400" />
@@ -480,7 +480,7 @@ export function MonkeytypeStats() {
                 <motion.div
                   className="p-3 bg-blue-600/10 border border-blue-600/20 rounded-lg text-center"
                   whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.2 }}
+                  transition={{ duration: 0.1 }}
                 >
                   <div className="flex items-center justify-center space-x-2 mb-1">
                     <Target className="h-4 w-4 text-blue-400" />
