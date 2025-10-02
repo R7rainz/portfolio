@@ -11,8 +11,8 @@ export default function About() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true, margin: "0px 0px -200px 0px" }}
         >
           <div className="flex justify-center mb-6">
             <div className="flex items-center space-x-2 text-muted-foreground font-fira-code text-sm">
@@ -20,8 +20,8 @@ export default function About() {
               <motion.span
                 initial={{ width: 0 }}
                 whileInView={{ width: "auto" }}
-                transition={{ delay: 0.2, duration: 0.8 }}
-                viewport={{ once: true }}
+                transition={{ delay: 0.2, duration: 0.4 }}
+                viewport={{ once: true, margin: "0px 0px -200px 0px" }}
                 className="overflow-hidden whitespace-nowrap"
               >
                 cat ~/about/ronak.md
@@ -32,8 +32,8 @@ export default function About() {
             className="font-source-code-pro text-4xl md:text-6xl font-bold dark:text-white light:text-black mb-4"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
           >
             About Me
           </motion.h2>
@@ -41,8 +41,8 @@ export default function About() {
             className="flex justify-center"
             initial={{ width: 0 }}
             whileInView={{ width: "auto" }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.3 }}
+            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
           >
             <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-red-400 rounded-full"></div>
           </motion.div>
@@ -54,8 +54,8 @@ export default function About() {
             className="lg:col-span-2 space-y-8"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ delay: 0.8, duration: 0.4 }}
+            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
           >
             {/* Personal Introduction */}
             <div className="space-y-4">
@@ -154,8 +154,8 @@ export default function About() {
               className="pt-8 border-t border-border"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2, duration: 0.6 }}
-              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.3 }}
+              viewport={{ once: true, margin: "0px 0px -200px 0px" }}
             >
               <div className="flex items-center space-x-2 text-muted-foreground font-fira-code text-sm mb-4">
                 <span className="text-red-600">❯</span>
@@ -176,8 +176,8 @@ export default function About() {
             className="space-y-8"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1, duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ delay: 1, duration: 0.4 }}
+            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
           >
             {/* Skills */}
             <div className="border border-border dark:bg-black/40 light:bg-gray-50 backdrop-blur-sm p-6 rounded-lg">
@@ -292,8 +292,8 @@ export default function About() {
                     className="flex items-start space-x-3"
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1.4 + index * 0.1, duration: 0.4 }}
-                    viewport={{ once: true }}
+                    transition={{ delay: 0.6 + index * 0.1, duration: 0.2 }}
+                    viewport={{ once: true, margin: "0px 0px -200px 0px" }}
                   >
                     <Icon className="h-5 w-5 text-red-600 mt-1 flex-shrink-0" />
                     <div>

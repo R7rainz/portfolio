@@ -135,7 +135,7 @@ export function ContributionGraph({
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{
                   delay: (weekIndex * 7 + dayIndex) * 0.001,
-                  duration: 0.2,
+                  duration: 0.1,
                 }}
                 whileHover={{ scale: 1.5 }}
                 title={`${day.count} contributions on ${day.date}`}

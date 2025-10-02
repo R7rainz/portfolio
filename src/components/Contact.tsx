@@ -91,8 +91,8 @@ export default function Contact() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true, margin: "0px 0px -200px 0px" }}
         >
           <div className="flex justify-center mb-6">
             <div className="flex items-center space-x-2 text-muted-foreground font-fira-code text-sm">
@@ -100,8 +100,8 @@ export default function Contact() {
               <motion.span
                 initial={{ width: 0 }}
                 whileInView={{ width: "auto" }}
-                transition={{ delay: 0.2, duration: 0.8 }}
-                viewport={{ once: true }}
+                transition={{ delay: 0.2, duration: 0.4 }}
+                viewport={{ once: true, margin: "0px 0px -200px 0px" }}
                 className="overflow-hidden whitespace-nowrap"
               >
                 ./connect --with ronak
@@ -112,8 +112,8 @@ export default function Contact() {
             className="font-source-code-pro text-4xl md:text-6xl font-bold dark:text-white light:text-black mb-4"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
           >
             Get In Touch
           </motion.h2>
@@ -121,8 +121,8 @@ export default function Contact() {
             className="flex justify-center mb-6"
             initial={{ width: 0 }}
             whileInView={{ width: "auto" }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.3 }}
+            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
           >
             <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-red-400 rounded-full"></div>
           </motion.div>
@@ -130,8 +130,8 @@ export default function Contact() {
             className="font-jetbrains text-lg text-muted-foreground max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ delay: 0.8, duration: 0.3 }}
+            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
           >
             Let&apos;s collaborate on something amazing. Whether it&apos;s a
             project, opportunity, or just a chat about tech!
@@ -144,8 +144,8 @@ export default function Contact() {
             className="mb-12"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ delay: 0.8, duration: 0.4 }}
+            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
           >
             {/* Quick Contact Info */}
             <div className="space-y-4">
@@ -185,8 +185,8 @@ export default function Contact() {
             className="space-y-8"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1, duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ delay: 1, duration: 0.4 }}
+            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
           >
             {/* Social Links */}
             <div className="space-y-6">
@@ -201,8 +201,8 @@ export default function Contact() {
                     key={social.name}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1.2 + index * 0.1, duration: 0.6 }}
-                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 + index * 0.1, duration: 0.3 }}
+                    viewport={{ once: true, margin: "0px 0px -200px 0px" }}
                   >
                     <Link
                       href={social.url}
@@ -261,13 +261,14 @@ export default function Contact() {
                         <motion.div
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.6 }}
+                          transition={{ duration: 0.3 }}
                         >
                           <Image
                             src={user.avatar_url || "/placeholder.svg"}
                             alt="GitHub Profile"
                             width={64}
                             height={64}
+                            priority
                             className="rounded-full border-2 border-red-600/20"
                           />
                         </motion.div>
@@ -319,10 +320,10 @@ export default function Contact() {
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{
-                              delay: 1.4 + index * 0.1,
-                              duration: 0.4,
+                              delay: 0.6 + index * 0.1,
+                              duration: 0.2,
                             }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, margin: "0px 0px -200px 0px" }}
                             whileHover={{ scale: 1.05 }}
                           >
                             <stat.icon className="h-5 w-5 text-red-600 mx-auto mb-2" />
@@ -458,7 +459,7 @@ export default function Contact() {
           className="text-center mt-16 pt-12 border-t border-border"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.6, duration: 0.6 }}
+          transition={{ delay: 0.8, duration: 0.2 }}
           viewport={{ once: true }}
         >
           <div className="flex justify-center mb-4">
