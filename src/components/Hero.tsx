@@ -139,6 +139,7 @@ export default function Hero() {
                     src={Ronak}
                     alt="Ronak Kamboj"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                   />

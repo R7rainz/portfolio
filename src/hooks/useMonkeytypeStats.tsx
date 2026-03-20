@@ -107,9 +107,12 @@ export function useMonkeytypeStats(): MonkeytypeStats {
         // Fetch user profile data
         try {
           console.log("Fetching profile...");
-          const profileResponse = await fetch(`${baseUrl}/users/profile`, {
-            headers,
-          });
+          const profileResponse = await fetch(
+            `${baseUrl}/users/${profileData.name}/profile`,
+            {
+              headers,
+            },
+          );
 
           if (profileResponse.ok) {
             const profileResult = await profileResponse.json();
@@ -124,7 +127,7 @@ export function useMonkeytypeStats(): MonkeytypeStats {
             console.warn(
               "Profile fetch failed:",
               profileResponse.status,
-              profileResponse.statusText
+              profileResponse.statusText,
             );
           }
         } catch (error) {
@@ -153,7 +156,7 @@ export function useMonkeytypeStats(): MonkeytypeStats {
             console.warn(
               "Stats fetch failed:",
               statsResponse.status,
-              statsResponse.statusText
+              statsResponse.statusText,
             );
           }
         } catch (error) {
@@ -174,7 +177,7 @@ export function useMonkeytypeStats(): MonkeytypeStats {
             console.warn(
               "Tags fetch failed:",
               tagsResponse.status,
-              tagsResponse.statusText
+              tagsResponse.statusText,
             );
           }
         } catch (error) {
@@ -190,7 +193,7 @@ export function useMonkeytypeStats(): MonkeytypeStats {
                 `${baseUrl}/users/personalBests?mode=${mode}`,
                 {
                   headers,
-                }
+                },
               );
 
               if (!response.ok) {
@@ -199,13 +202,13 @@ export function useMonkeytypeStats(): MonkeytypeStats {
                 }
                 if (response.status === 429) {
                   throw new Error(
-                    "Rate limit exceeded. Please try again later."
+                    "Rate limit exceeded. Please try again later.",
                   );
                 }
                 console.warn(
                   `Failed to fetch ${mode} personal bests:`,
                   response.status,
-                  response.statusText
+                  response.statusText,
                 );
                 return { mode, data: {} };
               }
@@ -217,7 +220,7 @@ export function useMonkeytypeStats(): MonkeytypeStats {
               console.warn(`Failed to fetch ${mode} personal bests:`, error);
               return { mode, data: {} };
             }
-          }
+          },
         );
 
         const personalBestsResults = await Promise.all(personalBestsPromises);
