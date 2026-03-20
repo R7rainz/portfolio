@@ -1,11 +1,20 @@
-"use client"
-import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { Github, Linkedin, Mail, Code2, Gamepad2, Keyboard, Terminal, ArrowDown } from "lucide-react"
-import Link from "next/link"
-import { motion } from "framer-motion"
-import Image from "next/image"
-import Ronak from '../../assests/Ronak.jpg'
+"use client";
+import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Code2,
+  Gamepad2,
+  Keyboard,
+  Terminal,
+  ArrowDown,
+} from "lucide-react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Ronak from "../../public/rainz(1).jpg";
 
 export default function Hero() {
   return (
@@ -109,16 +118,30 @@ export default function Hero() {
                 stiffness: 100,
               }}
             >
-              <motion.div className="relative group" whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}>
+              <motion.div
+                className="relative group"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              >
                 {/* Animated border glow */}
                 <motion.div
                   className="absolute -inset-1 bg-gradient-to-r from-red-600 via-red-400 to-red-600 rounded-full blur-sm opacity-75"
                   animate={{ opacity: [0.5, 0.8, 0.5] }}
-                  transition={{ duration: 1.2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+                  transition={{
+                    duration: 1.2,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "easeInOut",
+                  }}
                 />
                 {/* Profile picture */}
                 <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-red-600 bg-black">
-                  <Image src={Ronak} alt="Ronak Kamboj" fill className="object-cover" priority />
+                  <Image
+                    src={Ronak}
+                    alt="Ronak Kamboj"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
                 {/* Online status indicator */}
                 <motion.div
@@ -130,7 +153,11 @@ export default function Hero() {
                   <motion.div
                     className="absolute inset-0 bg-green-500 rounded-full"
                     animate={{ scale: [1, 1.5, 1], opacity: [1, 0, 1] }}
-                    transition={{ duration: 1.4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+                    transition={{
+                      duration: 1.4,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                    }}
                   />
                 </motion.div>
               </motion.div>
@@ -194,9 +221,11 @@ export default function Hero() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.3, duration: 0.4 }}
                 >
-                  Arch Linux enthusiast who builds things for the web. I love clean code, minimal setups, and the
-                  satisfaction of a perfectly configured system. Currently exploring modern web technologies like web3
-                  while maintaining my love for the terminal and ricing.
+                  Arch Linux enthusiast who builds things for the web. I love
+                  clean code, minimal setups, and the satisfaction of a
+                  perfectly configured system. Currently exploring modern web
+                  technologies like web3 while maintaining my love for the
+                  terminal and ricing.
                 </motion.p>
               </motion.div>
 
@@ -269,7 +298,9 @@ export default function Hero() {
                           <div className="font-jetbrains font-semibold text-sm dark:text-white light:text-black">
                             {title}
                           </div>
-                          <div className="text-xs text-red-400 font-fira-code">{desc}</div>
+                          <div className="text-xs text-red-400 font-fira-code">
+                            {desc}
+                          </div>
                         </div>
                       </div>
                     </motion.div>
@@ -301,25 +332,35 @@ export default function Hero() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 2.1, duration: 0.45 }}
                 >
-                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
                     <Button
                       variant="destructive"
                       size="lg"
                       className="font-jetbrains font-semibold"
                       onClick={() => {
-                        document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+                        document
+                          .getElementById("projects")
+                          ?.scrollIntoView({ behavior: "smooth" });
                       }}
                     >
                       View Projects
                     </Button>
                   </motion.div>
-                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
                     <Button
                       variant="outline"
                       size="lg"
                       className="font-jetbrains font-semibold bg-transparent"
                       onClick={() => {
-                        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                        document
+                          .getElementById("contact")
+                          ?.scrollIntoView({ behavior: "smooth" });
                       }}
                     >
                       Contact Me
@@ -359,13 +400,22 @@ export default function Hero() {
                   {/* Header with Arch Logo */}
                   <div className="flex items-center space-x-4 pb-4 border-b border-border">
                     <div className="text-blue-400 font-bold text-2xl">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
                         <path d="M12 2L2 22h20L12 2zm0 3.84L19.25 20H4.75L12 5.84z" />
                       </svg>
                     </div>
                     <div>
-                      <div className="font-jetbrains font-bold dark:text-white light:text-black">ronak@archlinux</div>
-                      <div className="font-jetbrains text-xs text-muted-foreground">~</div>
+                      <div className="font-jetbrains font-bold dark:text-white light:text-black">
+                        ronak@archlinux
+                      </div>
+                      <div className="font-jetbrains text-xs text-muted-foreground">
+                        ~
+                      </div>
                     </div>
                   </div>
 
@@ -413,10 +463,17 @@ export default function Hero() {
                         className="flex items-center justify-between"
                         initial={{ opacity: 0, x: 10 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 2.5 + index * 0.08, duration: 0.25 }}
+                        transition={{
+                          delay: 2.5 + index * 0.08,
+                          duration: 0.25,
+                        }}
                       >
-                        <span className={`${color} font-semibold min-w-[80px]`}>{label}</span>
-                        <span className="dark:text-white light:text-black flex-1 text-right">{value}</span>
+                        <span className={`${color} font-semibold min-w-[80px]`}>
+                          {label}
+                        </span>
+                        <span className="dark:text-white light:text-black flex-1 text-right">
+                          {value}
+                        </span>
                       </motion.div>
                     ))}
                   </div>
@@ -430,7 +487,9 @@ export default function Hero() {
                   >
                     <div className="flex items-center justify-between font-jetbrains text-sm">
                       <span className="text-red-400 font-semibold">Status</span>
-                      <span className="text-green-400">Available for opportunities</span>
+                      <span className="text-green-400">
+                        Available for opportunities
+                      </span>
                     </div>
                   </motion.div>
                 </div>
@@ -485,7 +544,11 @@ export default function Hero() {
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.9 }}
                     >
-                      <Link href={href} target="_blank" rel="noopener noreferrer">
+                      <Link
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Button
                           variant="ghost"
                           size="icon"
@@ -509,7 +572,9 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 3.5, duration: 0.45 }}
           >
-            <span className="text-xs text-muted-foreground font-fira-code">scroll --down</span>
+            <span className="text-xs text-muted-foreground font-fira-code">
+              scroll --down
+            </span>
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{
@@ -524,5 +589,5 @@ export default function Hero() {
         </div>
       </main>
     </div>
-  )
+  );
 }
