@@ -6,6 +6,70 @@ import Link from "next/link";
 import Image from "next/image";
 
 const projects = [
+{
+  id: "Taskflow",
+  name: "TaskFlow",
+  description:
+    "A secure and modular authentication microservice built with TypeScript, Express, and Prisma, supporting JWT-based auth, refresh tokens, and optional TOTP 2FA.",
+  type: "web",
+  icon: "ShieldCheck", // or "Lock", "Server", "Key"
+  tech: [
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "Prisma",
+    "PostgreSQL",
+    "JWT",
+    "Speakeasy",
+    "Nodemailer",
+    "Docker"
+  ],
+  features: [
+    "User registration and login with email/password",
+    "JWT-based authentication with access & refresh tokens",
+    "Optional TOTP 2FA using Speakeasy",
+    "Secure password reset via email (Nodemailer)",
+    "Prisma ORM for type-safe database access and migrations",
+    "Rate limiting and security middleware (Helmet, express-rate-limit)",
+    "Modular architecture with controllers, services, and middleware separation",
+    "Dockerized deployment with environment-based configuration"
+  ],
+  liveUrl: "",
+  githubUrl: "https://github.com/r7rainz/taskflow",
+  status: "In Development",
+  category: "Backend / Authentication Service",
+},
+{
+  id: "github-banners",
+  name: "GitHub Banners",
+  description:
+    "A high-performance backend service that generates dynamic SVG banners displaying real-time GitHub user statistics like repositories, stars, forks, and languages.",
+  type: "web",
+  image: "/placeholder.svg?height=300&width=500",
+  tech: [
+    "Go",
+    "PostgreSQL",
+    "Apache Kafka",
+    "Docker",
+    "Chi Router",
+    "go-github",
+    "go-cache",
+  ],
+  features: [
+    "Aggregates GitHub user statistics (repos, stars, forks, languages)",
+    "Generates dynamic SVG banners with real-time updates",
+    "Multi-token GitHub API support with automatic rotation",
+    "Multi-layer caching (in-memory + PostgreSQL) with TTL strategy",
+    "Background refresh system for keeping stats up-to-date",
+    "Event-driven microservices architecture using Kafka",
+    "Secure inter-service communication with HMAC signing",
+    "Dockerized setup for easy deployment and scalability",
+  ],
+  liveUrl: "https://bnrs.dev",
+  githubUrl: "https://github.com/hurtki/github-banners",
+  status: "In Development",
+  category: "Backend / Microservices",
+},
   {
     id: "codequest-lite",
     name: "CodeQuest Lite",

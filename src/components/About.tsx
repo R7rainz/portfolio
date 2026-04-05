@@ -66,11 +66,10 @@ export default function About() {
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
                 Hey there! I&apos;m{" "}
                 <span className="text-red-400 font-semibold">Ronak Kamboj</span>
-                , a Computer Science student at VIT Bhopal who&apos;s obsessed with
-                the intersection of clean code and elegant systems. While most
-                people see a terminal as intimidating, I see it as home -
-                there&apos;s something deeply satisfying about crafting solutions
-                that are both powerful and beautifully minimal.
+                , a Computer Science student at VIT Bhopal obsessed with building 
+                robust backend systems and clean architectures. While most people 
+                see a terminal as intimidating, I see it as home—crafting server-side 
+                solutions that are powerful, scalable, and beautifully minimal.
               </p>
             </div>
 
@@ -81,36 +80,18 @@ export default function About() {
                 <span>My Journey</span>
               </div>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
-                My path into technology began with a simple question: &quot;How
-                does this actually work?&quot; That curiosity led me deep into
-                the world of Linux systems, starting with Linux Mint where I
-                discovered the philosophy of building exactly what you
-                need—nothing more, nothing less. What started as distro-hopping
-                eventually brought me to Ubuntu with i3, but I craved complete
-                control over my environment. This drive for customization led me
-                to Arch Linux paired with Hyprland, where I dove into the art of
-                ricing to create a minimal setup that truly felt like mine.
+                My tech journey started with a deep dive into Linux systems, eventually 
+                leading me to Arch and Hyprland. That drive for ultimate control and 
+                minimal configuration naturally pushed me toward the backend. While I 
+                started with C/C++ and tackled algorithmic challenges on Codeforces, 
+                I quickly found my true passion in building APIs and managing data.
               </p>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
-                My programming journey started with Python—the language that
-                made coding feel approachable and fun. I picked up SQL in
-                school, getting comfortable with database queries and data
-                manipulation. From there, I built a simple snake and ladder
-                project in C, which taught me the fundamentals of procedural
-                programming. Eventually, I transitioned to C++ and dipped my
-                toes into competitive programming on Codeforces. My rating sits
-                at 943—not impressive by any means, but it&apos;s been a great
-                learning experience tackling algorithmic challenges.
-              </p>
-              <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
-                The same minimalist philosophy that drew me to tiling window
-                managers now shapes my approach to development. Every line of
-                code should serve a purpose, every component should earn its
-                place. And yes, I&apos;ll be honest—when it comes to frontend
-                development, I rely heavily on AI tools to help bring my ideas
-                to life. There&apos;s no shame in leveraging the right tools for
-                the job, especially when they help you focus on solving the
-                actual problems rather than wrestling with CSS quirks.
+                The same minimalist philosophy that drew me to tiling window managers 
+                now shapes my approach to software architecture. I have practiced and 
+                built things on the frontend in the past, but my primary focus now 
+                lies strictly beneath the surface—designing solid data models, writing 
+                efficient server logic, and letting the frontend consume what I build.
               </p>
             </div>
 
@@ -121,14 +102,11 @@ export default function About() {
                 <span>What Drives Me</span>
               </div>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
-                I&apos;m driven by the challenge of building solutions that are
-                not just functional, but elegant. Whether it&apos;s optimizing a
-                database query, crafting a responsive UI, or configuring a
-                development environment, I believe in doing things the right way
-                - even if it takes longer initially. The satisfaction of a
-                perfectly tuned system, whether it&apos;s a Hyprland rice or a
-                production application, is what keeps me coding late into the
-                night.
+                I&apos;m driven by the challenge of building systems that are not just 
+                functional, but elegant. Whether it&apos;s optimizing a complex database 
+                query, structuring a scalable application, or exploring concurrency, 
+                I believe in doing things the right way. The satisfaction of a 
+                perfectly tuned backend is what keeps me coding late into the night.
               </p>
             </div>
 
@@ -139,13 +117,11 @@ export default function About() {
                 <span>Current Focus</span>
               </div>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground">
-                Currently, I&apos;m diving deep into modern web technologies -
-                React, Next.js, and the entire JavaScript ecosystem. I&apos;m
-                also exploring DevOps practices, because understanding how to
-                deploy and maintain applications is just as important as
-                building them. When I&apos;m not coding, you&apos;ll find me
-                tweaking my Neovim config, exploring new mechanical keyboard
-                switches, or catching up on the latest Premier League matches.
+                Currently, my main stack revolves around Node.js, TypeScript, and Prisma ORM. 
+                I&apos;m also actively diving into Go to expand my backend toolkit and build 
+                high-performance services. When I&apos;m not architecting APIs, you&apos;ll 
+                find me tweaking my Neovim config, testing out new mechanical keyboard 
+                switches, or catching the latest Premier League matches.
               </p>
             </div>
 
@@ -162,10 +138,9 @@ export default function About() {
                 <span>./connect --with ronak</span>
               </div>
               <p className="font-jetbrains text-lg leading-relaxed text-muted-foreground mb-6">
-                I&apos;m always excited to connect with fellow developers,
-                especially those who appreciate the art of clean code and
-                minimal systems. Whether you want to discuss the latest web
-                technologies, share Linux rice screenshots, or explore potential
+                I&apos;m always excited to connect with fellow developers who appreciate 
+                robust systems and clean code. Whether you want to discuss backend 
+                architectures, share Linux rice screenshots, or explore potential 
                 collaboration opportunities, I&apos;d love to hear from you!
               </p>
             </motion.div>
@@ -191,7 +166,7 @@ export default function About() {
                     Frontend
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {["React", "Next.js", "TypeScript", "Tailwind CSS"].map(
+                    {["React", "NextJS", "TypeScript", "Tailwind CSS"].map(
                       (skill) => (
                         <span
                           key={skill}
@@ -208,7 +183,7 @@ export default function About() {
                     Backend
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {["Node.js", "Python", "PostgreSQL", "MongoDB"].map(
+                    {["Node.js", "Go", "PostgreSQL", "Prisma ORM", "Goose"].map(
                       (skill) => (
                         <span
                           key={skill}
@@ -284,7 +259,7 @@ export default function About() {
                   {
                     icon: Dumbbell,
                     title: "Gym & Powerlifting",
-                    desc: "110kg squat, 130kg deadlift - love heavy lifting",
+                    desc: "120kg squat, 140kg deadlift - love heavy lifting",
                   },
                 ].map(({ icon: Icon, title, desc }, index) => (
                   <motion.div
