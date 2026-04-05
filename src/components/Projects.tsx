@@ -36,7 +36,7 @@ const projects = [
   ],
   liveUrl: "https://github.com/r7rainz/taskflow",
   githubUrl: "https://github.com/r7rainz/taskflow",
-  status: "In Development",
+  status: "Live",
   category: "Backend / Authentication Service",
 },
 {
@@ -67,7 +67,7 @@ const projects = [
   ],
   liveUrl: "https://bnrs.dev",
   githubUrl: "https://github.com/hurtki/github-banners",
-  status: "In Development",
+  status: "Live",
   category: "Backend / Microservices",
 },
   {
